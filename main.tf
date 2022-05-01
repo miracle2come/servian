@@ -1,14 +1,14 @@
 terraform {
     required_providers {
       azurerm ={
-          sosource = "hashicorp/azurerm"
+          source = "hashicorp/azurerm"
           version = "~>2.80"
       }
-    }
+    }    
+}
 
-    provider "azurerm" {
+provider "azurerm" {
         features {}
-    }
 }
 
 resource "azurerm_resource_group" "test_rg" {
