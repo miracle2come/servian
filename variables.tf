@@ -5,7 +5,7 @@ variable "ARM_CLIENT_SECRET" {
   type = string
   sensitive = true
 }
-variable "ARM_SUBSDCRIPTION_ID" {
+variable "ARM_SUBSCRIPTION_ID" {
   type = string
 }
 variable "ARM_TENANT_ID" {
