@@ -1,15 +1,15 @@
 # servian test https://github.com/servian/TechChallengeInstructions
 
 ## High level architecture:
-Azure subscription
-    Resource Group
-        AKS
-            pod
-        VNET
-            Postgres Subnet
-            AKS subnet
-        Postgres
-            database
+- Azure subscription
+   - Resource Group
+       - AKS
+           - pod
+       - VNET
+           - Postgres Subnet
+           - AKS subnet
+       - Postgres
+           - database
 
 
 ## How to provision the solution:
@@ -49,10 +49,11 @@ Azure subscription
 * Provision KeyVault and store all the credentials in the KV
 * Azure FW + Private endpoint for Powtgres + AKS private cluster with private endpoint https://docs.microsoft.com/en-us/azure/aks/private-clusters
 * Azure FrontDoor as a load balancer with multiple AKS clusters
-* High availabililty for Flexible Postgresql https://docs.microsoft.com/en-us/azure/postgresql/flexible-server/concepts-high-availability
-  https://registry.terraform.io/providers/hashicorp/azurerm/latest/docs/resources/postgresql_flexible_server#high_availability 
-  setup maintenance windows when it suits https://registry.terraform.io/providers/hashicorp/azurerm/latest/docs/resources/postgresql_flexible_server#maintenance_window
-  georedundant backups https://registry.terraform.io/providers/hashicorp/azurerm/latest/docs/resources/postgresql_flexible_server#geo_redundant_backup_enabled
+* High availabililty for Flexible Postgresql 
+  - https://docs.microsoft.com/en-us/azure/postgresql/flexible-server/concepts-high-availability
+  - https://registry.terraform.io/providers/hashicorp/azurerm/latest/docs/resources/postgresql_flexible_server#high_availability 
+  - setup maintenance windows when it suits https://registry.terraform.io/providers/hashicorp/azurerm/latest/docs/resources/postgresql_flexible_server#maintenance_window
+  - georedundant backups https://registry.terraform.io/providers/hashicorp/azurerm/latest/docs/resources/postgresql_flexible_server#geo_redundant_backup_enabled
 * Monitoring with Azure Monitor https://docs.microsoft.com/en-us/azure/azure-monitor/containers/container-insights-enable-new-cluster#enable-using-terraform
 
  
