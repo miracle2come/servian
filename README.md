@@ -47,7 +47,7 @@
 * PostgresSQL granular access
 * Postgres FW to allow connections only from AKS
 * Provision KeyVault and store all the credentials in the KV
-* Azure FW + Private endpoint for Powtgres + AKS private cluster with private endpoint https://docs.microsoft.com/en-us/azure/aks/private-clusters
+* Azure FW + Private endpoint for Postgres + AKS private cluster with private endpoint https://docs.microsoft.com/en-us/azure/aks/private-clusters
 * Azure FrontDoor as a load balancer with multiple AKS clusters
 * High availabililty for Flexible Postgresql 
   - https://docs.microsoft.com/en-us/azure/postgresql/flexible-server/concepts-high-availability
@@ -55,6 +55,11 @@
   - setup maintenance windows when it suits https://registry.terraform.io/providers/hashicorp/azurerm/latest/docs/resources/postgresql_flexible_server#maintenance_window
   - georedundant backups https://registry.terraform.io/providers/hashicorp/azurerm/latest/docs/resources/postgresql_flexible_server#geo_redundant_backup_enabled
 * Monitoring with Azure Monitor https://docs.microsoft.com/en-us/azure/azure-monitor/containers/container-insights-enable-new-cluster#enable-using-terraform
+* Postgres DB content might be encrypted if required
+* AKS cluster autoscaling https://docs.microsoft.com/en-us/azure/aks/cluster-autoscaler
+* Pipeline success - there should be a way to access via API or get a status picture published 
+  - https://www.terraform.io/cloud-docs/api-docs/run
+  - https://www.terraform.io/cloud-docs/workspaces/settings/notifications
 
  
 
