@@ -1,8 +1,9 @@
 resource "azurerm_kubernetes_cluster" "aks_cluster" {
-  name = "aks_cluster"
-  location = azurerm_resource_group.test_rg.location
+  name                = "aks_cluster"
+  location            = azurerm_resource_group.test_rg.location
   resource_group_name = azurerm_resource_group.test_rg.name
-  sku_tier = "Free"
+  sku_tier            = "Free"
+  dns_prefix          = "testaks"
 
   default_node_pool {
     name = "default"
