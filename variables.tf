@@ -11,3 +11,7 @@ variable "ARM_SUBSCRIPTION_ID" {
 variable "ARM_TENANT_ID" {
   type = string
 }
+variable "pgsql_admin_secret " {
+  type = string
+  sensitive = true
+}
